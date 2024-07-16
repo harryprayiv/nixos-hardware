@@ -32,7 +32,7 @@ the following:
 ```nix
 {
   description = "NixOS configuration with flakes";
-  inputs.nixos-hardware.url = "github:harryprayiv/nixos-hardware/asus_zenbook_up3404va_ds74t";
+  inputs.nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
   outputs = { self, nixpkgs, nixos-hardware }: {
     # replace <your-hostname> with your actual hostname
@@ -41,7 +41,7 @@ the following:
       modules = [
         # ...
         # add your model from this list: https://github.com/NixOS/nixos-hardware/blob/master/flake.nix
-        nixos-hardware.nixosModules.asus_zenbook_up3404
+        nixos-hardware.nixosModules.dell-xps-13-9380
       ];
     };
   };
