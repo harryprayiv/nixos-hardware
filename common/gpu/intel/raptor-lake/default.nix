@@ -6,7 +6,7 @@
       hardware.intelgpu.driver = "xe";
     })
     (lib.mkIf (config.hardware.intelgpu.driver == "i915") {
-      boot.kernelParams = [ "i915.enable_guc=1" ];
+      boot.kernelParams = [ "i915.modeset=0" ];
     })
   ];
 }
