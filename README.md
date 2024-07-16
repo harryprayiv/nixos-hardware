@@ -41,7 +41,7 @@ the following:
       modules = [
         # ...
         # add your model from this list: https://github.com/NixOS/nixos-hardware/blob/master/flake.nix
-        nixos-hardware.nixosModules.dell-xps-13-9380
+        nixos-hardware.nixosModules.asus_zenbook_up3404
       ];
     };
   };
