@@ -32,7 +32,7 @@ the following:
 ```nix
 {
   description = "NixOS configuration with flakes";
-  inputs.nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+  inputs.nixos-hardware.url = "github:harryprayiv/nixos-hardware/asus_zenbook_up3404va_ds74t";
 
   outputs = { self, nixpkgs, nixos-hardware }: {
     # replace <your-hostname> with your actual hostname
