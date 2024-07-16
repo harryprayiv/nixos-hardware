@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    ../../../common/gpu/intel/raptor-lake
+    # ../../../common/gpu/intel/raptor-lake
     ../../../common/pc/laptop
     ../../../common/pc/laptop/ssd
     ../../battery.nix
