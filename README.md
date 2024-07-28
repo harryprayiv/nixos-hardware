@@ -89,7 +89,9 @@ See code for all available configurations.
 | [Asus Pro WS X570-ACE](asus/pro-ws-x570-ace)                           | `<nixos-hardware/asus/pro-ws-x570-ace>`                 |
 | [Asus ROG Ally RC71L (2023)](asus/ally/rc71l)                          | `<nixos-hardware/asus/ally/rc71l>`                      |
 | [Asus ROG Strix G513IM](asus/rog-strix/g513im)                         | `<nixos-hardware/asus/rog-strix/g513im>`                |
+| [Asus ROG Strix G713IE](asus/rog-strix/g713ie)                         | `<nixos-hardware/asus/rog-strix/g713ie>`                |
 | [Asus ROG Strix G733QS](asus/rog-strix/g733qs)                         | `<nixos-hardware/asus/rog-strix/g733qs>`                |
+| [Asus ROG Strix X570-E GAMING](asus/rog-strix/x570e)                   | `<nixos-hardware/asus/rog-strix/x570e>`                 |
 | [Asus ROG Zephyrus G14 GA401](asus/zephyrus/ga401)                     | `<nixos-hardware/asus/zephyrus/ga401>`                  |
 | [Asus ROG Zephyrus G14 GA402](asus/zephyrus/ga402)                     | `<nixos-hardware/asus/zephyrus/ga402>`                  |
 | [Asus ROG Zephyrus G14 GA402X* (2023)](asus/zephyrus/ga402x/amdgpu)    | `<nixos-hardware/asus/zephyrus/ga402x/amdgpu>`          |
@@ -178,6 +180,7 @@ See code for all available configurations.
 | [Intel NUC 8i7BEH](intel/nuc/8i7beh/)                                  | `<nixos-hardware/intel/nuc/8i7beh>`                     |
 | [Lenovo IdeaPad 3 15alc6](lenovo/ideapad/15alc6)                       | `<nixos-hardware/lenovo/ideapad/15alc6>`                |
 | [Lenovo IdeaPad Gaming 3 15arh05](lenovo/ideapad/15arh05)              | `<nixos-hardware/lenovo/ideapad/15arh05>`               |
+| [Lenovo IdeaPad Gaming 3 15ach6](lenovo/ideapad/15ach6)                | `<nixos-hardware/lenovo/ideapad/15ach6>`                |
 | [Lenovo IdeaPad 5 Pro 16ach6](lenovo/ideapad/16ach6)                   | `<nixos-hardware/lenovo/ideapad/16ach6>`                |
 | [Lenovo IdeaPad Z510](lenovo/ideapad/z510)                             | `<nixos-hardware/lenovo/ideapad/z510>`                  |
 | [Lenovo IdeaPad Slim 5](lenovo/ideapad/slim-5)                         | `<nixos-hardware/lenovo/ideapad/slim-5>`                |
@@ -248,6 +251,7 @@ See code for all available configurations.
 | [Lenovo ThinkPad X1 (9th Gen)](lenovo/thinkpad/x1/9th-gen)             | `<nixos-hardware/lenovo/thinkpad/x1/9th-gen>`           |
 | [Lenovo ThinkPad X1 (10th Gen)](lenovo/thinkpad/x1/10th-gen)           | `<nixos-hardware/lenovo/thinkpad/x1/10th-gen>`          |
 | [Lenovo ThinkPad X1 (11th Gen)](lenovo/thinkpad/x1/11th-gen)           | `<nixos-hardware/lenovo/thinkpad/x1/11th-gen>`          |
+| [Lenovo ThinkPad X1 (12th Gen)](lenovo/thinkpad/x1/12th-gen)           | `<nixos-hardware/lenovo/thinkpad/x1/12th-gen>`          |
 | [Lenovo ThinkPad X1 Extreme Gen 2](lenovo/thinkpad/x1-extreme/gen2)    | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen2>`      |
 | [Lenovo ThinkPad X1 Extreme Gen 4](lenovo/thinkpad/x1-extreme/gen4)    | `<nixos-hardware/lenovo/thinkpad/x1-extreme/gen4>`      |
 | [Lenovo ThinkPad X1 Nano Gen 1](lenovo/thinkpad/x1-nano/gen1)          | `<nixos-hardware/lenovo/thinkpad/x1-nano/gen1>`         |
@@ -287,9 +291,10 @@ See code for all available configurations.
 | [NXP iMX8 MQuad Evaluation Kit](nxp/imx8mq-evk)                        | `<nixos-hardware/nxp/imx8mq-evk>`                       |
 | [Hardkernel Odroid HC4](hardkernel/odroid-hc4/default.nix)             | `<nixos-hardware/hardkernel/odroid-hc4>`                |
 | [Hardkernel Odroid H3](hardkernel/odroid-h3/default.nix)               | `<nixos-hardware/hardkernel/odroid-h3>`                 |
-| [Omen 15-en0010ca](omen/14-fb0798ng)                                   | `<nixos-hardware/omen/14-fb0798ng>`                     |
+| [Omen 14-fb0798ng](omen/14-fb0798ng)                                   | `<nixos-hardware/omen/14-fb0798ng>`                     |
 | [Omen 15-en0010ca](omen/15-en0010ca)                                   | `<nixos-hardware/omen/15-en0010ca>`                     |
 | [Omen 16-n0005ne](omen/16-n0005ne)                                     | `<nixos-hardware/omen/16-n0005ne>`                      |
+| [Omen 16-n0280nd](/omen/16-n0280nd)                                    | `<nixos-hardware/omen/16-n0280nd>`                      |
 | [Omen 15-en1007sa](omen/15-en1007sa)                                   | `<nixos-hardware/omen/15-en1007sa>`                     |
 | [Omen 15-en0002np](omen/15-en0002np)                                   | `<nixos-hardware/omen/15-en0002np>`                     |
 | [One-Netbook OneNetbook 4](onenetbook/4)                               | `<nixos-hardware/onenetbook/4>`                         |

@@ -4,6 +4,7 @@
   outputs = _: {
     nixosModules = let
       deprecated = issue: name: value: builtins.trace "warning: ${name} flake output is deprecated and will be removed. See https://github.com/NixOS/nixos-hardware/issues/${issue} for more information" value;
+      import = path: path; # let the module system know what we are exporting
     in {
       acer-aspire-4810t = import ./acer/aspire/4810t;
       airis-n990 = import ./airis/n990;
@@ -16,6 +17,7 @@
       apple-macbook-pro-12-1 = import ./apple/macbook-pro/12-1;
       apple-macbook-pro-14-1 = import ./apple/macbook-pro/14-1;
       apple-macmini-4-1 = import ./apple/macmini/4;
+      apple-imac-18-2 = import ./apple/imac/18-2;
       apple-t2 = import ./apple/t2;
       asus-battery = import ./asus/battery.nix;
       asus-ally-rc71l = import ./asus/ally/rc71l;
@@ -25,12 +27,16 @@
       asus-fa507rm = import ./asus/fa507rm;
       asus-pro-ws-x570-ace = import ./asus/pro-ws-x570-ace;
       asus-rog-strix-g513im = import ./asus/rog-strix/g513im;
+      asus-rog-strix-g713ie = import ./asus/rog-strix/g713ie;
       asus-rog-strix-g733qs = import ./asus/rog-strix/g733qs;
+      asus-rog-strix-x570e = import ./asus/rog-strix/x570e;
       asus-zenbook-ux371 = import ./asus/zenbook/ux371;
       asus_zenbook_up3404 = import ./asus/zenbook/up3404va-ds74t;
       asus-zephyrus-ga401 = import ./asus/zephyrus/ga401;
       asus-zephyrus-ga402 = import ./asus/zephyrus/ga402;
       asus-zephyrus-ga402x = import ./asus/zephyrus/ga402x;
+      asus-zephyrus-ga402x-amdgpu = import ./asus/zephyrus/ga402x/amdgpu;
+      asus-zephyrus-ga402x-nvidia = import ./asus/zephyrus/ga402x/nvidia;
       asus-zephyrus-ga502 = import ./asus/zephyrus/ga502;
       asus-zephyrus-ga503 = import ./asus/zephyrus/ga503;
       asus-zephyrus-gu603h = import ./asus/zephyrus/gu603h;
@@ -110,6 +116,7 @@
       intel-nuc-8i7beh = import ./intel/nuc/8i7beh;
       lenovo-ideapad-15alc6 = import ./lenovo/ideapad/15alc6;
       lenovo-ideapad-15arh05 = import ./lenovo/ideapad/15arh05;
+      lenovo-ideapad-15ach6 = import ./lenovo/ideapad/15ach6;
       lenovo-ideapad-16ach6 = import ./lenovo/ideapad/16ach6;
       lenovo-ideapad-z510 = import ./lenovo/ideapad/z510;
       lenovo-ideapad-slim-5 = import ./lenovo/ideapad/slim-5;
@@ -155,6 +162,7 @@
       lenovo-thinkpad-t14-amd-gen2 = import ./lenovo/thinkpad/t14/amd/gen2;
       lenovo-thinkpad-t14-amd-gen3 = import ./lenovo/thinkpad/t14/amd/gen3;
       lenovo-thinkpad-t14-amd-gen4 = import ./lenovo/thinkpad/t14/amd/gen4;
+      lenovo-thinkpad-t14-amd-gen5 = import ./lenovo/thinkpad/t14/amd/gen5;
       lenovo-thinkpad-t14s = import ./lenovo/thinkpad/t14s;
       lenovo-thinkpad-t14s-amd-gen1 = import ./lenovo/thinkpad/t14s/amd/gen1;
       lenovo-thinkpad-t14s-amd-gen4 = import ./lenovo/thinkpad/t14s/amd/gen4;
@@ -184,6 +192,7 @@
       lenovo-thinkpad-x1-9th-gen = import ./lenovo/thinkpad/x1/9th-gen;
       lenovo-thinkpad-x1-10th-gen = import ./lenovo/thinkpad/x1/10th-gen;
       lenovo-thinkpad-x1-11th-gen = import ./lenovo/thinkpad/x1/11th-gen;
+      lenovo-thinkpad-x1-12th-gen = import ./lenovo/thinkpad/x1/12th-gen;
       lenovo-thinkpad-x1-extreme = import ./lenovo/thinkpad/x1-extreme;
       lenovo-thinkpad-x1-extreme-gen2 = import ./lenovo/thinkpad/x1-extreme/gen2;
       lenovo-thinkpad-x1-extreme-gen4 = import ./lenovo/thinkpad/x1-extreme/gen4;
@@ -207,6 +216,8 @@
       lenovo-thinkpad-z13-gen2 = import ./lenovo/thinkpad/z/gen2/z13;
       lenovo-yoga-6-13ALC6 = import ./lenovo/yoga/6/13ALC6;
       lenovo-yoga-7-14ARH7 = import ./lenovo/yoga/7/14ARH7;
+      lenovo-yoga-7-14ARH7-amdgpu = import ./lenovo/yoga/7/14ARH7/amdgpu;
+      lenovo-yoga-7-14ARH7-nvidia = import ./lenovo/yoga/7/14ARH7/nvidia;
       lenovo-yoga-7-slim-gen8 = import ./lenovo/yoga/7/slim/gen8;
       letsnote-cf-lx4 = import ./panasonic/letsnote/cf-lx4;
       microchip-icicle-kit = import ./microchip/icicle-kit;
@@ -230,6 +241,7 @@
       omen-14-fb0798ng = import ./omen/14-fb0798ng;
       omen-15-en0010ca = import ./omen/15-en0010ca;
       omen-16-n0005ne = import ./omen/16-n0005ne;
+      omen-16-n0280nd = import ./omen/16-n0280nd;
       omen-15-en1007sa = import ./omen/15-en1007sa;
       omen-15-en0002np = import ./omen/15-en0002np;
       onenetbook-4 = import ./onenetbook/4;
